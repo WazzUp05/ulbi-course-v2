@@ -1,5 +1,4 @@
 import './styles/index.scss';
-import { Link } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from './providers/router';
@@ -11,7 +10,6 @@ export const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Navbar />
             <AppRouter />
-            <button onClick={toggleTheme}>Toggle</button>
         </div>
     );
 };
