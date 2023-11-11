@@ -17,7 +17,7 @@ export const Button: FC<ButtonProps> = (props) => {
     //    const { t } = useTranslation();
 
     return (
-        <button className={classNames(cls.button, {}, [className, cls[theme]])} {...otherProps}>
+        <button className={classNames(cls.Button, {}, [className, cls[theme]])} {...otherProps}>
             {children}
         </button>
     );
