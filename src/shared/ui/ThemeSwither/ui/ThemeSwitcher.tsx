@@ -1,4 +1,3 @@
-// import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ThemeSwitcher.module.scss';
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
@@ -11,7 +10,6 @@ interface ThemeSwitcherProps {
 }
 
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
-    //    const { t } = useTranslation();
     const { theme, toggleTheme } = useTheme();
 
     return (

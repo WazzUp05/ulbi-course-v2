@@ -1,8 +1,8 @@
 // import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './AppLink.module.scss';
-import { FC } from 'react';
-import { Link, LinkProps } from 'react-router-dom';
+import { type FC } from 'react';
+import { Link, type LinkProps } from 'react-router-dom';
 
 export enum AppLinkTheme {
     PRIMARY = 'primary',
