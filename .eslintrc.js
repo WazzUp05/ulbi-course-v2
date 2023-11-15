@@ -3,7 +3,13 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ['standard-with-typescript', 'plugin:react/recommended', 'prettier', 'plugin:react/jsx-runtime'],
+    extends: [
+        'standard-with-typescript',
+        'plugin:react/recommended',
+        'prettier',
+        'plugin:react/jsx-runtime',
+        'plugin:i18next/recommended',
+    ],
     overrides: [
         {
             env: {
@@ -19,7 +25,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react'],
+    plugins: ['react', 'i18next'],
     rules: {
         'react/jsx-indent': ['error', 4],
         'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
@@ -32,5 +38,9 @@ module.exports = {
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/no-var-requires': 'off',
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
+    },
+    globals: {
+        __IS_DEV__: true,
     },
 };
