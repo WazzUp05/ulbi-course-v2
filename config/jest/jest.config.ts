@@ -22,6 +22,7 @@ export default {
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
     rootDir: '../../',
     testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
+
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
@@ -84,7 +85,6 @@ export default {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
-    preset: 'ts-jest',
 
     // Run tests from one or more projects
     // projects: undefined,
