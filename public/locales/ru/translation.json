@@ -6,5 +6,8 @@
   "About": "О сайте",
   "Lang": "Русский",
   "toggle": "Меню",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "An unexpected error occurred": "Произошла непоедвиденная ошибка",
+  "Refresh page": "Обновить страницу",
+  "throw error": "Ошибка"
 }
