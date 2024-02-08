@@ -20,5 +20,15 @@
             "module": "CommonJS"
         }
     },
-    "include": ["./config/jest/setupTests.ts", "./src/**/*"]
+    "include": [
+        // "./config/jest/*.ts",
+        // "./config/jest/*.tsx",
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./config/**/*.ts",
+        "./config/**/*.tsx",
+        "./webpack.config.ts"
+        // "./config/storybook/*.tsx",
+        // "./config/storybook/*.ts"
+    ]
 }

@@ -4,13 +4,7 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: [
-        'standard-with-typescript',
-        'plugin:react/recommended',
-        'prettier',
-        'plugin:react/jsx-runtime',
-        'plugin:i18next/recommended',
-    ],
+    extends: ['standard-with-typescript', 'plugin:react/recommended', 'prettier', 'plugin:react/jsx-runtime', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
     overrides: [
         {
             env: {
@@ -23,8 +17,10 @@ module.exports = {
         },
     ],
     parserOptions: {
+        ecmaFeatures: { jsx: true },
         ecmaVersion: 'latest',
         sourceType: 'module',
+        project: './tsconfig.json',
     },
     plugins: ['react', 'i18next'],
     rules: {
@@ -39,7 +35,7 @@ module.exports = {
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/no-var-requires': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
     },
     globals: {
         __IS_DEV__: true,

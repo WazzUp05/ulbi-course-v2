@@ -9,7 +9,7 @@ export default {
     clearMocks: true,
     coverageProvider: 'v8',
     testEnvironment: 'jsdom',
-    coveragePathIgnorePatterns: ['/node_modules/'],
+    coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
     moduleDirectories: ['node_modules'],
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
     rootDir: '../../',
