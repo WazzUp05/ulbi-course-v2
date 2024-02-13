@@ -5,9 +5,6 @@ import 'app/styles/index.scss';
 const meta = {
     title: 'shared/Button',
     component: Button,
-    parameters: {
-        layout: 'centered',
-    },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -26,28 +23,9 @@ export const Clear: Story = {
     },
 };
 
-// export const Outline: Story = {
-//     args: {
-//         children: 'Clear',
-//         theme: ThemeButton.OUTLINE,
-//     },
-// };
-
-// export const Secondary: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Large: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Small: Story = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };
+export const Outline: Story = {
+    args: {
+        children: 'Outline',
+        theme: ThemeButton.OUTLINE,
+    },
+};
