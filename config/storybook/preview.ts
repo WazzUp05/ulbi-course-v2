@@ -6,6 +6,7 @@ import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterD
 
 // eslint-disable-next-line react/display-name
 const preview: Preview = {
+    // @ts-expect-error - decorators require specific typing adjustments
     decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator],
 
     parameters: {
