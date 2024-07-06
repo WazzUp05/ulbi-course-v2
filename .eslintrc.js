@@ -4,16 +4,24 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['standard-with-typescript', 'plugin:react/recommended', 'prettier', 'plugin:react/jsx-runtime', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+    extends: [
+        'standard-with-typescript',
+        'plugin:react/recommended',
+        'prettier',
+        'plugin:react/jsx-runtime',
+        'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
+    ],
     overrides: [
         {
             env: {
                 node: true,
             },
-            files: ['.eslintrc.{js,cjs}'],
+            files: ['.eslintrc.{js,cjs}', '**/src/**/*.{test,stories}.{ts,tsx}'],
             parserOptions: {
                 sourceType: 'script',
             },
+            rules: { 'i18next/no-literal-string': 'off', 'max-len': 'off' },
         },
     ],
     parserOptions: {
@@ -40,10 +48,4 @@ module.exports = {
     globals: {
         __IS_DEV__: true,
     },
-    overrides: [
-        {
-            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
-            rules: { 'i18next/no-literal-string': 'off', 'max-len': 'off' },
-        },
-    ],
 };
