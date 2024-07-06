@@ -23,6 +23,7 @@
     "include": [
         // "./config/jest/*.ts",
         // "./config/jest/*.tsx",
+        "./config/jest/jest-setup.ts",
         "./src/**/*.ts",
         "./src/**/*.tsx",
         "./config/**/*.ts",
