@@ -6,18 +6,21 @@
 import path from 'path';
 
 export default {
+    globals: { __IS_DEV__: true, __API__: '' },
     clearMocks: true,
-    // coverageProvider: 'v8',
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
-    moduleDirectories: ['node_modules'],
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
+    moduleDirectories: ['node_modules'],
+    modulePaths: ['<rootDir>/src'],
+    testMatch: [
+        // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
+        '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
+    ],
     rootDir: '../../',
-    modulePaths: ['<rootDir>src'],
-    testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
     setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
     moduleNameMapper: {
-        '\\.(s?css)$': 'identity-obj-proxy',
+        '\\.s?css$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
     },
     // Indicates whether the coverage information should be collected while executing the test
@@ -32,6 +35,7 @@ export default {
     // An array of regexp pattern strings used to skip coverage collection
 
     // Indicates which provider should be used to instrument code for coverage
+    // coverageProvider: "babel",
 
     // A list of reporter names that Jest uses when writing coverage reports
     // coverageReporters: [
@@ -60,7 +64,6 @@ export default {
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
-    // globals: {},
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
@@ -82,6 +85,7 @@ export default {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
+    // preset: undefined,
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -135,7 +139,7 @@ export default {
 
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [
-    //   "/node_modules/"
+    //   "\\\\node_modules\\\\"
     // ],
 
     // The regexp pattern or array of patterns that Jest uses to detect test files
@@ -158,8 +162,8 @@ export default {
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
-    //   "/node_modules/",
-    //   "\\.pnp\\.[^\\/]+$"
+    //   "\\\\node_modules\\\\",
+    //   "\\.pnp\\.[^\\\\]+$"
     // ],
 
     // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
