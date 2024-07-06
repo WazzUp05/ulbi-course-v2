@@ -7,7 +7,7 @@ import path from 'path';
 
 export default {
     clearMocks: true,
-    coverageProvider: 'v8',
+    // coverageProvider: 'v8',
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
     moduleDirectories: ['node_modules'],
