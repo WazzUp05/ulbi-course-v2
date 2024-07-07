@@ -7,10 +7,10 @@ module.exports = {
     extends: [
         'standard-with-typescript',
         'plugin:react/recommended',
-        'prettier',
         'plugin:react/jsx-runtime',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
+        'prettier',
     ],
     overrides: [
         {
@@ -32,7 +32,8 @@ module.exports = {
     },
     plugins: ['react', 'i18next'],
     rules: {
-        'react/jsx-indent': ['error', 4],
+        'react/jsx-indent': ['warn', 4],
+        indent: ['warn', 4],
         'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
         'import/no-unresolved': 'off',
         'no-unused-vars': 'warn',
