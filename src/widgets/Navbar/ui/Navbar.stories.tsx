@@ -21,6 +21,6 @@ export const Dark: Story = {
 // export const Outline: Story = {
 //     args: {
 //         children: 'Outline',
-//         theme: ThemeButton.OUTLINE,
+//         theme: ButtonTheme.OUTLINE,
 //     },
 // };
