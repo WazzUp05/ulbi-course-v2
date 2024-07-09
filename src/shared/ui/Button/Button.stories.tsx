@@ -23,6 +23,13 @@ export const Clear: Story = {
     },
 };
 
+export const ClearInverted: Story = {
+    args: {
+        children: 'ClearInverted',
+        theme: ButtonTheme.CLEAR_INVERTED,
+    },
+};
+
 export const Outline: Story = {
     args: {
         children: 'Outline',
@@ -32,7 +39,7 @@ export const Outline: Story = {
 
 export const OutlineSizeL: Story = {
     args: {
-        children: 'Outline',
+        children: 'OutlineSizeL',
         theme: ButtonTheme.OUTLINE,
         size: ButtonSize.L,
     },
@@ -40,7 +47,7 @@ export const OutlineSizeL: Story = {
 
 export const OutlineSizeXl: Story = {
     args: {
-        children: 'Outline',
+        children: 'OutlineSizeXl',
         theme: ButtonTheme.OUTLINE,
         size: ButtonSize.XL,
     },
@@ -48,14 +55,14 @@ export const OutlineSizeXl: Story = {
 
 export const BackgroundTheme: Story = {
     args: {
-        children: 'Outline',
+        children: 'BackgroundTheme',
         theme: ButtonTheme.BACKGROUND,
     },
 };
 
 export const BackgroundInvertedTheme: Story = {
     args: {
-        children: 'Outline',
+        children: 'BackgroundInvertedTheme',
         theme: ButtonTheme.BACKGROUND_INVERTED,
     },
 };

@@ -1,14 +1,15 @@
 {
-    "Тестовый пример": "тестовый пример",
-    "Translate": "Перевод",
-    "Main page": "основная старница",
-    "Main": "Главная",
-    "About": "О сайте",
-    "ShortLang": "Ru",
-    "Lang": "Русский",
-    "toggle": "Меню",
-    "Page not found": "Страница не найдена",
-    "An unexpected error occurred": "Произошла непоедвиденная ошибка",
-    "Refresh page": "Обновить страницу",
-    "throw error": "Ошибка"
+  "Тестовый пример": "тестовый пример",
+  "Translate": "Перевод",
+  "Main page": "основная старница",
+  "Main": "Главная",
+  "About": "О сайте",
+  "ShortLang": "Ru",
+  "Lang": "Русский",
+  "toggle": "Меню",
+  "Page not found": "Страница не найдена",
+  "An unexpected error occurred": "Произошла непоедвиденная ошибка",
+  "Refresh page": "Обновить страницу",
+  "throw error": "Ошибка",
+  "Login": "Войти"
 }

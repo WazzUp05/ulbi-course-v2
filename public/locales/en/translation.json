@@ -1,14 +1,15 @@
 {
-    "Тестовый пример": "Test work",
-    "Translate": "Translate",
-    "Main page": "Main page",
-    "Main": "Main",
-    "About": "About",
-    "ShortLang": "En",
-    "Lang": "English",
-    "toggle": "Menu",
-    "Page not found": "Page not found",
-    "An unexpected error occurred": "An unexpected error occurred",
-    "Refresh page": "Refresh page",
-    "throw error": "throw error"
+  "Тестовый пример": "Test work",
+  "Translate": "Translate",
+  "Main page": "Main page",
+  "Main": "Main",
+  "About": "About",
+  "ShortLang": "En",
+  "Lang": "English",
+  "toggle": "Menu",
+  "Page not found": "Page not found",
+  "An unexpected error occurred": "An unexpected error occurred",
+  "Refresh page": "Refresh page",
+  "throw error": "throw error",
+  "Login": "Login"
 }
