@@ -11,5 +11,7 @@
   "An unexpected error occurred": "An unexpected error occurred",
   "Refresh page": "Refresh page",
   "throw error": "throw error",
-  "Login": "Login"
+  "Login": "Login",
+  "increment": "increment",
+  "decrement": "decrement"
 }
