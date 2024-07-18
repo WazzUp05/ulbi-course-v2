@@ -29,7 +29,8 @@
         "./config/**/*.ts",
         "./config/**/*.tsx",
         "./webpack.config.ts",
-        "./.eslintrc.js"
+        "./.eslintrc.js",
+        "./json-server/index.js"
         // "./config/storybook/*.tsx",
         // "./config/storybook/*.ts"
     ]
