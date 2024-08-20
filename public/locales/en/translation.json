@@ -13,5 +13,7 @@
   "throw error": "throw error",
   "Login": "Login",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Enter username": "Enter username",
+  "Enter password": "Enter password"
 }
