@@ -3,6 +3,7 @@ import 'app/styles/index.scss';
 import { Navbar } from './Navbar';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 
 const meta = {
     title: 'shared/Navbar',
@@ -12,15 +13,14 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Light: Story = {};
-
-export const Dark: Story = {
-    decorators: [ThemeDecorator(Theme.DARK)],
+export const Light: Story = {
+    decorators: [StoreDecorator({})],
 };
 
-// export const Outline: Story = {
-//     args: {
-//         children: 'Outline',
-//         theme: ButtonTheme.OUTLINE,
-//     },
-// };
+export const Dark: Story = {
+    decorators: [StoreDecorator({}), ThemeDecorator(Theme.DARK)],
+};
+
+export const AuthNavbar: Story = {
+    decorators: [StoreDecorator({ user: { authData: { id: '1', username: 'admin' } } }), ThemeDecorator(Theme.DARK)],
+};
