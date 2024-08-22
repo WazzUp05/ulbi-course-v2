@@ -26,24 +26,11 @@
     margin-left: 10px;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.icon {
-    fill: var(--inverted-primary-color)
-}
 
 .collapseBtn {
     position: absolute;
     right: -32px;
     bottom: 32px;
-}
-
-.link {
-    opacity: 1;
 }
 
 .collapsed {
