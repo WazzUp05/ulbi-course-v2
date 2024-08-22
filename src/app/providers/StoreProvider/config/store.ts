@@ -3,7 +3,6 @@ import { type StateSchema } from './StateSchema';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
 import { createReducerManager } from './reducerManager';
-import { useDispatch } from 'react-redux';
 
 export function createReduxStore(initialTheme?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) {
     const rootReducer: ReducersMapObject<StateSchema> = {
