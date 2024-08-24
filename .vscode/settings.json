@@ -5,5 +5,8 @@
     "stylelint.enable": true,
     "css.validate": true,
     "scss.validate": true,
-    "stylelint.validate": ["css", "less"]
+    "stylelint.validate": ["css", "less"],
+    "i18n-ally.dirStructure": "auto",
+    "i18n-ally.extract.keygenStrategy": "empty",
+    "i18n-ally.extract.keyPrefix": ""
 }

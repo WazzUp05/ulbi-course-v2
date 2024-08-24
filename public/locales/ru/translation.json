@@ -18,5 +18,6 @@
   "Enter password": "Введите пароль",
   "Authorization": "Авторизация",
   "You entered an incorrect username or password": "Вы ввели неверное имя пользователя или пароль",
-  "Logout": "Выйти"
+  "Logout": "Выйти",
+  "profile.Add": "Привет"
 }

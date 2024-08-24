@@ -18,5 +18,10 @@
   "Enter password": "Enter password",
   "Authorization": "Authorization",
   "You entered an incorrect username or password": "You entered an incorrect username or password",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "profile.Add": "Add",
+  "profile": {
+    "DDDDsss": "dsad"
+  },
+  "profile.DDDDsss": "dasa"
 }

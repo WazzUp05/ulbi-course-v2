@@ -20,7 +20,6 @@ export function createReducerManager(initialReducers: ReducersMapObject<StateSch
                 keysToRemove = [];
             }
 
-            // Delegate to the combined reducer
             return combinedReducer(state, action);
         },
 

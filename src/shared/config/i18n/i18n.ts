@@ -18,6 +18,8 @@ i18n.use(Backend)
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
+        keySeparator: false,
+        nsSeparator: false,
     });
 
 export default i18n;

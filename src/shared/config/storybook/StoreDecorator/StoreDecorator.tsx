@@ -1,4 +1,4 @@
-import { type ReducersMapObject, type DeepPartial } from '@reduxjs/toolkit';
+import { type ReducersMapObject } from '@reduxjs/toolkit';
 import { type Story } from '@storybook/react';
 import { StoreProvider, type StateSchema } from 'app/providers/StoreProvider';
 import { profileReducer } from 'entities/Profile';
