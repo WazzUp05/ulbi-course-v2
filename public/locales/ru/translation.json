@@ -19,5 +19,6 @@
   "Authorization": "Авторизация",
   "You entered an incorrect username or password": "Вы ввели неверное имя пользователя или пароль",
   "Logout": "Выйти",
-  "profile.Add": "Привет"
+  "Currency": "Укажите валюту",
+  "Country": "Укажите страну"
 }

@@ -3,9 +3,6 @@
     border: 2px solid var(--inverted-bg-color);
 }
 
-.header {
-    display: flex;
-}
 
 .data {
     display: flex;
@@ -13,6 +10,31 @@
     gap: 10px;
 }
 
-.editBtn {
-    margin-left: auto;
+.loading,
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.editing {
+    border: 2px solid var(--inverted-primary-color);
+}
+
+.input {
+
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    &[type="number"] {
+        -moz-appearance: textfield;
+
+        &:hover,
+        &:focus {
+            -moz-appearance: number-input;
+        }
+    }
 }
