@@ -5,11 +5,16 @@
   "City": "",
   "Currency": "",
   "Edit": "",
+  "First and last name are required": "",
   "First name": "",
   "Last name": "",
+  "No data": "",
   "Profile": "",
   "Save": "",
+  "Server error when saving": "",
   "There was an error loading your profile": "",
   "Try reload page": "",
+  "Uncorrect age": "",
+  "Uncorrect country": "",
   "Username": ""
 }
