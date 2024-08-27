@@ -3,7 +3,7 @@ import HTMLWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { type BuildOptions } from './types/config';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 
 export function buildPlugins({ paths, isDev, apiUrl, project }: BuildOptions): webpack.WebpackPluginInstance[] {
     const plugin = [
@@ -20,12 +20,11 @@ export function buildPlugins({ paths, isDev, apiUrl, project }: BuildOptions): w
             __API__: JSON.stringify(apiUrl),
             __PROJECT__: JSON.stringify(project),
         }),
-        new ReactRefreshWebpackPlugin({
-            overlay: false,
-        }),
     ];
 
     if (isDev) {
+        plugin.push(new ReactRefreshWebpackPlugin());
+        plugin.push(new webpack.HotModuleReplacementPlugin());
         plugin.push(
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
