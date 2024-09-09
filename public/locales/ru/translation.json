@@ -20,5 +20,7 @@
   "You entered an incorrect username or password": "Вы ввели неверное имя пользователя или пароль",
   "Logout": "Выйти",
   "Currency": "Укажите валюту",
-  "Country": "Укажите страну"
+  "Country": "Укажите страну",
+  "Article not found": "Статья не найдена",
+  "Copy": "Копировать"
 }

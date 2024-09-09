@@ -3,7 +3,7 @@ import 'app/styles/index.scss';
 import ArticlesPage from './ArticlesPage';
 
 const meta = {
-    title: 'shared/ArticlesPage',
+    title: 'pages/ArticlesPage',
     component: ArticlesPage,
 } satisfies Meta<typeof ArticlesPage>;
 

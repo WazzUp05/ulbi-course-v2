@@ -20,5 +20,7 @@
   "You entered an incorrect username or password": "You entered an incorrect username or password",
   "Logout": "Logout",
   "Currency": "Specify currency",
-  "Country": "Please indicate your country"
+  "Country": "Please indicate your country",
+  "Article not found": "Article not found",
+  "Copy": "Copy"
 }

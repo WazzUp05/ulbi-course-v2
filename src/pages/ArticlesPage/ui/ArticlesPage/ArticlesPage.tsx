@@ -1,5 +1,5 @@
 import { memo, type FC } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ArticlesPage.module.scss';
 
@@ -9,9 +9,9 @@ interface ArticalsPageProps {
 
 const ArticlesPage: FC<ArticalsPageProps> = (props) => {
     const { className } = props;
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
-    return <div className={classNames(cls.articalsPage, {}, [className])}>ArticlesPage</div>;
+    return <div className={classNames(cls.ArticalsPage, {}, [className])}></div>;
 };
 
 export default memo(ArticlesPage);
