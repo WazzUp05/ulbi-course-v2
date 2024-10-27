@@ -4,7 +4,7 @@ import { type Article } from '../types/article';
 
 // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
 export const fetchArticleById = createAsyncThunk<Article, string, ThunkConfig<string>>(
-    'articleDetails/fetchrofileData',
+    'articleDetails/fetchProfileData',
     async (articleId, thunkApi) => {
         const { rejectWithValue, extra } = thunkApi;
 

@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect } from 'react';
+import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import cls from './ArticleDetails.module.scss';
 import { DynamicModuleLoader, type ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
@@ -21,6 +21,7 @@ import { ArticleBlockType, type ArticleBlock } from '../../types/article';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
+import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 
 interface ArticleDetailsProps {
     className?: string;
@@ -55,11 +56,9 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         }
     }, []);
 
-    useEffect(() => {
-        if (__PROJECT__ !== 'storybook') {
-            dispatch(fetchArticleById(id));
-        }
-    }, [dispatch, id]);
+    useInitialEffect(() => {
+        dispatch(fetchArticleById(id));
+    });
 
     let content;
 
@@ -90,7 +89,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                     <Icon Svg={CalendarIcon} />
                     <Text text={article?.createdAt} />
                 </div>
-                {article?.blocks.map(renderBlock)}
+                {article?.blocks && article.blocks.length > 0 && article?.blocks.map(renderBlock)}
             </>
         );
     }
