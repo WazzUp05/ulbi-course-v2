@@ -1,13 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import 'app/styles/index.scss';
-import { ArticleDetails } from './ArticleDetails';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { type Article, ArticleBlockType, ArticleType } from '../../types/article';
+import { ArticlesList } from './ArticlesList';
+import { type Article, ArticleBlockType, ArticleType, ArticleView } from '../../types/article';
 
 const meta = {
-    title: 'entities/Article/ArticleDetails',
-    component: ArticleDetails,
-} satisfies Meta<typeof ArticleDetails>;
+    title: 'entities/Article/ArticlesList',
+    component: ArticlesList,
+} satisfies Meta<typeof ArticlesList>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -86,41 +85,33 @@ const article: Article = {
     ],
 };
 
-export const Primary: Story = {
+export const LoadingBig: Story = {
     args: {
-        id: '1',
+        isLoading: true,
+        articles: [],
+        view: ArticleView.BIG,
     },
-    decorators: [
-        StoreDecorator({
-            articleDetails: {
-                data: article,
-            },
-        }),
-    ],
 };
 
-export const Loading: Story = {
+export const LoadingSmall: Story = {
     args: {
-        id: '1',
+        isLoading: true,
+        articles: [],
+        view: ArticleView.SMALL,
     },
-    decorators: [
-        StoreDecorator({
-            articleDetails: {
-                isLoading: true,
-            },
-        }),
-    ],
 };
 
-export const Erro: Story = {
+export const ListSmall: Story = {
     args: {
-        id: '1',
+        isLoading: false,
+        articles: new Array(9).fill(0).map((item, index) => ({ ...article, id: String(index) })),
+        view: ArticleView.SMALL,
     },
-    decorators: [
-        StoreDecorator({
-            articleDetails: {
-                error: 'error',
-            },
-        }),
-    ],
+};
+export const ListBig: Story = {
+    args: {
+        isLoading: false,
+        articles: new Array(9).fill(0).map((item, index) => ({ ...article, id: String(index) })),
+        view: ArticleView.BIG,
+    },
 };

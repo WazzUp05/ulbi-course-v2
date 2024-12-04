@@ -35,7 +35,7 @@ export const CommentCard = memo((props: CommentCardProps) => {
 
     return (
         <div className={classNames(cls.CommentCard, {}, [className])}>
-            <AppLink to={`${RoutePath.profile}/${comment.user.id}`} className={cls.header}>
+            <AppLink to={`${RoutePath.profile}${comment.user.id}`} className={cls.header}>
                 <div className={cls.header}>
                     {comment.user?.avatar ? <Avatar size={40} src={comment.user.avatar} /> : null}
                     <Text title={comment.user?.username} />
